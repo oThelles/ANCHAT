@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap&family=Anton+SC&display=swap');
+
+:root {
+    --cinza-escuro: #1b1b1b;
+    --rosa-avermelhado: #e9204f;
+    --branco: #f3f3f3;
+    --azul-eletrico: #1468F3;
+    --amarelo-vibrante: #FFE500;
+    --verde-limao: #4BEA36;
+    --roxo-vibrante: #8925ED;
+    --laranja: #FF7626;
+    --cinza: #777777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    min-height: 120vh;
+    background-color: var(--cinza-escuro);
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    height: 6rem;
+}
+
+.tittle-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.tittle-header h1 {
+    font-family: 'Anton SC', sans-serif;
+    color: var(--rosa-avermelhado);
+    font-size: 3.1rem;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+.tittle-header h2 {
+    color: var(--branco);
+    font-size: 0.8rem;
+    font-family: 'Anton SC', sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.icons i {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-user {
+    width: 100%;
+    min-height: 6rem;
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid var(--rosa-avermelhado) 0.18rem;
+    box-shadow: 5px 5px var(--rosa-avermelhado);
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.card-user img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 2px 2px var(--rosa-avermelhado);
+}
+
+.text-user {
+    flex: 1;
+    min-width: 0;
+}
+
+.text-user h2 {
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.text-user p {
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-user div {
+    height: 0.3rem;
+    width: 100%;
+    max-width: 11.5rem;
+    background-color: var(--amarelo-vibrante);
+}
+
+.subtitle-user {
+    flex-shrink: 0;
+}
+
+.subtitle-user p {
+    font-family: 'Anton SC', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    transform: rotate(-6deg);
+    background-color: var(--rosa-avermelhado);
+    width: 4rem;
+    padding: 0.3rem;
+}
+
+/* CONTAINER DOS BOTÕES */
+
+.btns-interact {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* CONTAINER INDIVIDUAL */
+
+.button-container {
+    width: 100%;
+    height: 4rem;
+    filter: drop-shadow(4px 4px 0 var(--cor-botao));
+}
+
+/* BOTÕES */
+
+.btns-interact button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--branco);
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Anton SC', sans-serif;
+    font-size: 0.8rem;
+    color: var(--cinza-escuro);
+    cursor: pointer;
+    --recorte: 8px;
+    mask:
+        radial-gradient(circle at top left, transparent var(--recorte), black calc(var(--recorte) + 1px)),
+        radial-gradient(circle at top right, transparent var(--recorte), black calc(var(--recorte) + 1px)),
+        radial-gradient(circle at bottom left, transparent var(--recorte), black calc(var(--recorte) + 1px)),
+        radial-gradient(circle at bottom right, transparent var(--recorte), black calc(var(--recorte) + 1px));
+
+    mask-composite: intersect;
+}
+
+/* ÍCONES */
+
+.btns-interact button i {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--cor-botao);
+}
+
+.btns-interact button br {
+    display: none;
+}
+
+/* CORES */
+
+.vermelho {
+    --cor-botao: var(--rosa-avermelhado);
+}
+
+.azul {
+    --cor-botao: var(--azul-eletrico);
+}
+
+.amarelo {
+    --cor-botao: var(--amarelo-vibrante);
+}
+
+.verde {
+    --cor-botao: var(--verde-limao);
+}
+
+.card-event{
+    background-color: var(--branco);
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--rosa-avermelhado) 0.2rem;
+    box-shadow: 5px 5px var(--rosa-avermelhado);
+    gap: 1rem;
+}
+
+.card-event .text-event{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.text-event{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-event p{
+    font-family: 'Anton SC', sans-serif;
+    background-color: var(--amarelo-vibrante);
+    width: 2.8rem;
+    transform: rotate(-5deg);
+    margin-bottom: 10px;
+}
+
+.text-event h2{
+    font-family: 'Anton SC', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.event-destaque{
+    color: #e9204f;
+}
+
+.text-event h3{
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    color: var(--cinza);
+}
+
+.btns-p{
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btns-p p{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--azul-eletrico);
+    padding: 0.3rem;
+    font-weight: 800;
+    transform: rotate(-10deg);
+    margin-bottom: 1rem;
+    width: 6rem;
+}
+
+.btns-p button{
+    outline: none;
+    border: none;
+    background-color: var(--cinza-escuro);
+    width: 9rem;
+    color: var(--branco);
+    height: 2.5rem;
+    box-shadow: 4px 4px var(--rosa-avermelhado);
+    font-family: 'Anton SC', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.inhot {
+    width: 100%;
+    background-color: transparent;
+}
+
+.header-inhot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.header-inhot h3 {
+    font-family: 'Anton SC', sans-serif;
+    font-size: 1.8rem;
+    color: var(--branco);
+    text-decoration: underline;
+    text-decoration-color: var(--amarelo-vibrante);
+}
+
+.header-inhot a {
+    font-family: 'Anton SC', sans-serif;
+    font-size: 1.8rem;
+    color: var(--azul-eletrico);
+    text-decoration: none;
+}
+
+.btns-inhot {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.btns-inhot button {
+    position: relative;
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.6rem;
+    background-color: var(--branco);
+    border: 2px solid var(--rosa-avermelhado);
+    box-shadow: 4px 4px 0 var(--rosa-avermelhado);
+    font-family: 'Anton SC', sans-serif;
+    color: var(--cinza-escuro);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btns-inhot button i {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-eletrico);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: var(--branco);
+}
+
+.text-button-inhot {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.text-button-inhot .sala-inhot {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text-button-inhot p {
+    font-size: 0.6rem;
+}
+
+.subtittle-inhot{
+    font-family: 'Outfit', sans-serif;
+}
+
+.whatis-inhot {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    background-color: var(--azul-eletrico);
+    padding: 0.1rem 0.3rem;
+    font-size: 0.55rem;
+    color: var(--branco);
+    transform: rotate(5deg);
+}
+
+#verde{
+    background-color: var(--verde-limao);
+}
+
+.project{
+    line-height: 1.4rem;
+}
+
+.feira{
+    line-height: 1.3rem;
+}
+
+#roxo{
+    background-color: var(--roxo-vibrante);
+}
+
+#laranja{
+    background-color: var(--laranja);
+}
+
+.memes{
+    line-height: 1.3rem;
+}
+
+.for-you{
+    width: 98%;
+    background-color: transparent;
+}
+
+.for-you-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.for-you-header h3{
+    font-family: 'Anton SC', sans-serif;
+    color: var(--branco);
+    font-size: 1.8rem;
+    text-decoration: underline var(--amarelo-vibrante);
+}
+
+.for-you-header a{
+    text-decoration: none;
+    color: var(--azul-eletrico);
+    font-family: 'Anton SC', sans-serif;
+    font-size: 1.8rem;
+}
+
+.post-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--branco);
+    border: solid 0.15rem var(--rosa-avermelhado);
+    box-shadow: var(--rosa-avermelhado) 5px 5px;
+    gap: 0.5rem;
+    width: 98%;
+}
+
+.post-box img{
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.text-post{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    text-align: start;
+    font-size: 0.8rem;
+    gap: 0.2rem;
+}
+
+.name-user-post{
+    font-family: 'Anton SC', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.horario-post{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: var(--cinza);
+}
+
+.text-post-user{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
+.class-user-post{
+    position: absolute;
+    left: 11.5rem;
+    top: 50rem;
+    border: solid var(--azul-eletrico) 0.12rem;
+    width: 2.5rem;
+    height: 1.3rem;
+    font-family: 'Anton SC', sans-serif;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.icons-post{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.9rem;
+}

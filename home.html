@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchat</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="js/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="tittle-header">
+            <h1>ANCHAT!</h1>
+            <h2>MURAL DA ESCOLA</h2>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-gear" onclick="showConfigs()"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <main>
+        <section class="card-user">
+            <img src="assets/img/icon-no-img.png" alt="img-user">
+            <div class="text-user">
+                <h2>Olá, oThellesz</h2>
+                <p>Veja oque está rolando hoje</p>
+                <div class="line-text-user"></div>
+            </div>
+            <div class="subtitle-user">
+                <p>Mesma Escola.<br>Mais<br>Conexões</p>
+            </div>
+        </section>
+        <section class="btns-interact">
+            <div class="button-container vermelho">
+                <button type="button">
+                    <i class="fa-solid fa-camera"></i><br>
+                    POSTAGEM
+                </button>
+            </div>
+            <div class="button-container azul">
+                <button type="button">
+                    <i class="fa-solid fa-users"></i><br>
+                    SALAS
+                </button>
+            </div>
+            <div class="button-container amarelo">
+                <button type="button">
+                    <i class="fa-solid fa-bullhorn"></i><br>
+                    AVISOS
+                </button>
+            </div>
+            <div class="button-container verde">
+                <button type="button">
+                    <i class="fa-solid fa-calendar"></i><br>
+                    EVENTOS
+                </button>
+            </div>
+        </section>
+        <section class="card-event">
+            <div class="text-event">
+                <p>EVENTO</p>
+                <h2>GINCANA<br><span class="event-destaque">DA ESCOLA!</span></h2>
+                <h3 class="subtittle-event">Inscrições abertas até sexta-feira!<br>Monte sua equipe e venha fazer parte!</h3>
+            </div>
+            <div class="btns-p">
+                <p>DESAFIOS<br>AMIZADE<br>DIVERSÃO<br>PRÊMIOS</p>
+                <button type="button">PARTICIPAR</button>
+            </div>
+        </section>
+        <section class="inhot">
+            <div class="header-inhot">
+                <h3>EM ALTA</h3>
+                <a href="">VER TODOS</a>
+            </div>
+            <div class="btns-inhot">
+                <button type="button">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="text-button-inhot">
+                        <p class="sala-inhot"><b>3°B</b></p>
+                        <p class="subtittle-inhot">42 POSTAGENS</p>
+                    </div>
+                    <p class="whatis-inhot">TURMA</p>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-flask" id="verde"></i>
+                    <div class="text-button-inhot">
+                        <p class="sala-inhot project"><b>PROJETO DE CIÊNCIAS</b></p>
+                    </div>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-masks-theater" id="roxo"></i>
+                    <div class="text-button-inhot">
+                        <p class="sala-inhot feira"><b>FEIRA CULTURAL</b></p>
+                    </div>
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-face-laugh-squint" id="laranja"></i>
+                    <div class="text-button-inhot">
+                        <p class="sala-inhot memes">MEMES DA ESCOLA</p>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section class="for-you">
+            <div class="for-you-header">
+                <h3>PARA VOCÊ</h3>
+                <a href="">VER TUDO</a>
+            </div>
+            <div class="posts-for-you">
+                <div class="post-box">
+                    <img src="assets/img/icon-no-img.png" alt="img-user">
+                    <div class="text-post">
+                        <h3 class="name-user-post">LARA MENDES</h3>
+                        <p class="horario-post">HÁ 2 HORAS</p>
+                        <p class="text-post-user">Alguém tem o resumo da prova de história?</p>
+                        <p class="class-user-post">1°A</p>
+                    </div>
+                    <div class="icons-post">
+                        <i class="fa-regular fa-comment"> 12</i>
+                        <i class="fa-regular fa-heart"> 28</i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

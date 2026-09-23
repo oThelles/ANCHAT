@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap&family=Anton+SC&display=swap');
+
+:root{
+    --cinza-escuro: #1b1b1b;
+    --rosa-avermelhado: #e9204f;
+    --branco: #f3f3f3;
+    --azul-vibrante: #3D5AFE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--cinza-escuro);
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.tittle{
+    font-size: 3.8rem;
+    font-family: 'Anton SC', sans-serif;
+    color: var(--branco);
+    width: 90%;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+}
+
+.tittle span{
+    color: var(--rosa-avermelhado);
+    text-decoration: underline;
+}
+
+.box-login{
+    border: var(--rosa-avermelhado) 0.2rem solid;
+    box-shadow: var(--rosa-avermelhado) 8px 8px;
+    height: 26rem;
+    width: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: var(--branco);
+}
+
+.form-input-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.form-input-login input{
+    width: 18rem;
+    height: 3rem;
+    outline: none;
+    border: solid var(--rosa-avermelhado) 0.1rem;
+    padding: 0.5rem;
+    box-shadow: var(--rosa-avermelhado) 3px 3px;
+    font-family: 'Anton SC', sans-serif;
+    letter-spacing: 1px;
+}
+
+.form-input-login button{
+    height: 3rem;
+    width: 13rem;
+    outline: none;
+    border: none;
+    box-shadow: 7px 7px var(--rosa-avermelhado);
+    background-color: var(--cinza-escuro);
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--branco);
+    transition: ease-in-out 0.2s; 
+}
+
+.form-input-login button:active{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.form-input-login button:hover{
+    cursor: pointer;
+}
+
+.link-form{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.link-form a{
+    color: var(--rosa-avermelhado);
+}
+
+#warning {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+}
+
+.warning-box {
+    position: relative;
+    background-color: var(--branco);
+    width: 22rem;
+    max-width: 90%;
+    min-height: 20rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px var(--rosa-avermelhado);
+    border: solid var(--rosa-avermelhado);
+}
+
+.close-warning {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: solid var(--rosa-avermelhado);
+    box-shadow: var(--rosa-avermelhado) 3px 3px;
+    width: 3rem;
+    color: var(--cinza-escuro);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.close-warning:active {
+    transform: scale(1.1);
+}
+
+.warning-box h2{
+    font-family: 'Anton SC', sans-serif;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.warning-box p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+}

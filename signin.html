@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchat Cadastro</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="js/signin.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1 class="tittle">CRIE SUA CONTA<br>NO <br><span>ANCHAT!</span></h1>
+        <section class="box-login">
+            <form action="" class="form-input-login">
+                <input type="text" name="username" id="username" placeholder="Digite seu nome de usuario">
+                <input type="password" name="psw-input" id="psw-input" placeholder="Digite sua senha">
+                <input type="password" name="psw-input-confirm" id="psw-input-confirm" placeholder="Confirme sua senha"> 
+                <button onclick="fazerLogin(event)">Entrar</button>
+                <p class="link-form">Já tem uma conta? Faça Login <a href="index.html">Aqui!</a></p>
+            </form>
+        </section>
+        <section id="warning">
+            <section class="warning-box">
+                <button class="close-warning" type="button" onclick="closeWarning()">X</button>
+                <h2>Ops! Algo deu errado</h2>
+                <p id="errorMessage"></p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

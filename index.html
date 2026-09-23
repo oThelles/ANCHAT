@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchat Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1 class="tittle">BEM-VINDO <br>AO <br><span>ANCHAT!</span></h1>
+        <section class="box-login">
+            <div class="box-text">
+                <h2>FAÇA SEU LOGIN:</h2>
+            </div>
+            <form action="" class="form-input-login">
+                <input type="text" name="username" id="username" placeholder="Digite seu nome de usuario">
+                <input type="password" name="psw-input" id="psw-input" placeholder="Digite sua senha">
+                <button onclick="fazerLogin(event)">Entrar</button>
+                <p class="link-form">Não tem uma conta? Crie Uma <a href="signin.html">Aqui!</a></p>
+            </form>
+        </section>
+        <section id="warning">
+            <section class="warning-box">
+                <button class="close-warning" type="button" onclick="closeWarning()">X</button>
+                <h2>Ops! Algo deu errado</h2>
+                <p id="errorMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem omnis iure odit possimus id corporis? Vitae dolores tempore natus dicta, amet perferendis, adipisci officia fuga nihil aliquam incidunt in.</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

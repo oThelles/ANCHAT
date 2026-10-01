@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="js/home.js" defer></script>
-</head>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 <body>
     <header>
         <div class="tittle-header">
@@ -15,7 +15,7 @@
             <h2>MURAL DA ESCOLA</h2>
         </div>
         <div class="icons">
-            <i class="fa-solid fa-gear" onclick="showConfigs()"></i>
+            <i class="fa-solid fa-gear" onclick="show('configs')"></i>
             <i class="fa-regular fa-bell"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -24,12 +24,12 @@
         <section class="card-user">
             <img src="assets/img/icon-no-img.png" alt="img-user">
             <div class="text-user">
-                <h2>Olá, oThellesz</h2>
+                <h2 id="user-name">Olá</h2>
                 <p>Veja oque está rolando hoje</p>
                 <div class="line-text-user"></div>
             </div>
             <div class="subtitle-user">
-                <p>Mesma Escola.<br>Mais<br>Conexões</p>
+                <p>Mesma Escola.<br>Mais<br>Conexões.</p>
             </div>
         </section>
         <section class="btns-interact">
@@ -113,18 +113,53 @@
                     <img src="assets/img/icon-no-img.png" alt="img-user">
                     <div class="text-post">
                         <h3 class="name-user-post">LARA MENDES</h3>
-                        <p class="horario-post">HÁ 2 HORAS</p>
                         <p class="text-post-user">Alguém tem o resumo da prova de história?</p>
                         <p class="class-user-post">1°A</p>
-                    </div>
-                    <div class="icons-post">
-                        <i class="fa-regular fa-comment"> 12</i>
-                        <i class="fa-regular fa-heart"> 28</i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="configs" id="configs">
+            <form>
+                <button type="button" onclick="hide('configs')">X</button>
+                <button type="button" class="vermelho">SUA CONTA</button>
+                <button type="button" class="azul">PRIVACIDADE E SEGURANÇA</button>
+                <button type="button" class="amarelo">NOTIFICAÇÕES</button>
+                <button type="button" class="verde">SOBRE</button>
+                <button type="button" class="laranja" onclick="clearDatabase()">REINICIAR</button>
+
+            </form>
+        </section>
+        <nav class="navbar">
+            <a href="home.html" class="nav-item active">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <span>INÍCIO</span>
+            </a>
+
+            <a href="chat.html" class="nav-item">
+                <div class="nav-icon">
+                    <i class="fa-regular fa-message"></i>
+                </div>
+                <span>CHAT</span>
+            </a>
+
+            <a href="avisos.html" class="nav-item">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <span>AVISOS</span>
+            </a>
+
+            <a href="perfil.html" class="nav-item">
+                <div class="nav-icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <span>PERFIL</span>
+            </a>
+
+        </nav>
     </main>
 </body>
 </html>

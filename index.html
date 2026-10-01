@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anchat</title>
+    <title>Anchat Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/database.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <form action="" class="form-input-login">
                 <input type="text" name="username" id="username" placeholder="Digite seu nome de usuario">
                 <input type="password" name="psw-input" id="psw-input" placeholder="Digite sua senha">
-                <button onclick="fazerLogin(event)">Entrar</button>
+                <button type="submit" onclick="fazerLogin(event)">Entrar</button>
                 <p class="link-form">Não tem uma conta? Crie Uma <a href="signin.html">Aqui!</a></p>
             </form>
         </section>

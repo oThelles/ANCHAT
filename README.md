@@ -1,3 +1,3 @@
-V. 0.5 Beta
+V. 1.16 Beta
 
 A personal project created to be a social network for our school. 
